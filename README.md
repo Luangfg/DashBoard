@@ -1,9 +1,9 @@
-<h1>DashBoard</h1> 
-<h2>Aprendizado</h2>h2>
+<h1>DashBoard de treinamento</h1> 
+<h2>Aprendizado</h2
 <ul>
-  <li>Aplicação de Menu Hamburguer</li>
-  <li>Layout responsivo(em andamento)</li>
-  <li>Aplicação e estilização de CSS com GRID e FlexBox</li>
-  <li>HTML Semantico</li>
-  <li>Estilização avançada com CSS</li>
+  <ol>Aplicação de Menu Hamburguer</ol>
+  <ol>Layout responsivo(em andamento)</ol>
+  <ol>Aplicação e estilização de CSS com GRID e FlexBox</ol>
+  <ol>HTML Semantico</ol>
+  <ol>Estilização avançada com CSS</ol>
 </ul>
