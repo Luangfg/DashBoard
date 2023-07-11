@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <title>Dashboard Admin responsivo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navegacao">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                        <span class="titulo">Painel do Administrador</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="titulo">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+                        <span class="titulo">Customização</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                        <span class="titulo">Menssagem</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                        <span class="titulo">Ajuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="titulo">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="titulo">Senha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                        <span class="titulo">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Main-->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle"><ion-icon name="grid-outline"></ion-icon>
+                </div>
+        
+        <!--Buscar-->
+                <div class="pesquisa">
+                    <label>
+                        <input type="text" placeholder="Buscar">
+                        <ion-icon name="search-outline"></ion-icon>
+                        </input>
+                    </label>
+                </div>
+                <!--Imagem do usuario-->
+                <div class="usuario">
+                    <img src="img/user.jpg">
+                </div>
+            </div>
+
+            <!--CARDS-->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numeros">1,504</div>
+                        <div class="cardNome">Visualizações diárias</div>
+                    </div>
+                        <div class="iconBx">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numeros">80</div>
+                        <div class="cardNome">Vendas</div>
+                    </div>
+                        <div class="iconBx">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numeros">284</div>
+                        <div class="cardNome">Comentarios</div>
+                    </div>
+                        <div class="iconBx">
+                            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                        </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numeros">R$7.842,00</div>
+                        <div class="cardNome">Ganho</div>
+                    </div>
+                        <div class="iconBx">
+                            <ion-icon name="cash-outline"></ion-icon>
+                        </div>
+                </div>
+            </div>
+
+            <!--LISTA COM DETALHES-->
+            <div class="detalhes">
+                <div class="pedidoRecente">
+                    <div class="cardHeader">
+                        <h2>Pedidos Recentes</h2>
+                        <a href="#" class="btn">Ver tudo</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nome</td>
+                                <td>Preço</td>
+                                <td>Pagamentos</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Estrela Refrigerador</td>
+                                <td>R$1.200,00</td>
+                                <td>Pago</td>
+                                <td><span class="status entregue">Entregue</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Cooler Windows</td>
+                                <td>R$110,00</td>
+                                <td>Aguardando Pagamento</td>
+                                <td><span class="status pendente">Pendente</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Caixa de som</td>
+                                <td>R$620,00</td>
+                                <td>Pago</td>
+                                <td><span class="status retornado">Retornou</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Notebook HP</td>
+                                <td>R$1.945,00</td>
+                                <td>Aguardando Pagamento</td>
+                                <td><span class="status processo">Em processo</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>R$1.200,00</td>
+                                <td>Pago</td>
+                                <td><span class="status transito">Em transito</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Fans para computador</td>
+                                <td>R$110,00</td>
+                                <td>Pago</td>
+                                <td><span class="status pendente">Pendente</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Tenis Adidas</td>
+                                <td>R$620,00</td>
+                                <td>Pago</td>
+                                <td><span class="status retornado">Retornou</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Camisetas Denim</td>
+                                <td>R$110,00</td>
+                                <td>Aguardando Pagamento</td>
+                                <td><span class="status processo">Em processo</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Tenis Casual</td>
+                                <td>R$575,00</td>
+                                <td>Pago</td>
+                                <td><span class="status pendente">Pendente</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Fans para computador</td>
+                                <td>R$110,00</td>
+                                <td>Pago</td>
+                                <td><span class="status pendente">Pendente</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Camisetas Denim</td>
+                                <td>R$110,00</td>
+                                <td>Aguardando Pagamento</td>
+                                <td><span class="status processo">Em processo</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--NOVOS CLIENTES-->
+                <div class="clientesRecentes">
+                    <div class="cardHeader">
+                        <h2 class="clientesRecentes__titulo">Clientes Recentes</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src='/img/img1.jpg'></div></td>
+                            <td><h4>David<br><span>Italia</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src='/img/img2.jpg'></div></td>
+                            <td><h4>Muhammad<br><span>India</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src='/img/img3.jpg'></div></td>
+                            <td><h4>Amelia<br><span>França</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src='/img/img4.jpg'></div></td>
+                            <td><h4>Olivia<br><span>Estados Unidos</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src='/img/img5.jpg'></div></td>
+                            <td><h4>Totsuke<br><span>Japão</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src='/img/img6.jpg'></div></td>
+                            <td><h4>Ashraf<br><span>India</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src='/img/img7.jpg'></div></td>
+                            <td><h4>Diana<br><span>Malásia</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src='/img/img8.jpg'></div></td>
+                            <td><h4>Amit<br><span>India</span></h4></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let navegacao = document.querySelector('.navegacao');
+        let main = document.querySelector('.main');
+
+
+        toggle.onclick = function(){
+            navegacao.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+
+//ADD HOVERED NA CLASSE SELECIONADA LISTA ITEM
+        let list = document.querySelectorAll('.navegacao li');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('hovered'));
+            item.classList.add('hovered');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover',activeLink))
+    </script>
+</body>
+</html>

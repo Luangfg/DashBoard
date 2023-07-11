@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --azul:#287bff ;
+    --branco:#fff ;
+    --cinza: #f5f5f5;
+    --preto1: #222;
+    --preto2: #999;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+.container{
+    position:relative;  
+    width:100%;
+}
+
+.navegacao{
+    position:fixed;
+    width:300px;
+    height: 100%;
+    background: var(--azul);
+    border-left:10px solid var(--azul);
+    transition:0.5s;
+    overflow: hidden;
+}
+.navegacao.active{
+    width:80px;
+}
+
+.navegacao ul{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+.navegacao ul li{
+    position:relative;
+    width:100%;
+    list-style:none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.navegacao ul li:hover,
+.navegacao ul li.hovered{
+    background:vaR(--branco);
+}
+
+.navegacao ul li:nth-child(1){
+    margin-bottom:40px;
+    pointer-events:none;
+}
+
+.navegacao ul li a {
+    position:relative;
+    display:block;
+    width: 100%;
+    display:flex;
+    text-decoration: none;
+    color:var(--branco);
+}
+
+.navegacao ul li:hover a,
+.navegacao ul li.hovered a{
+    color:vaR(--blue);
+}
+
+.navegacao ul li a .icon{
+    position:relative;
+    display:block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align:center;
+}
+
+.navegacao ul li a .icon ion-icon{
+    font-size: 1.75rem;
+}
+
+.navegacao ul li a .titulo{
+    position: relative;
+    display:block;
+    padding:0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space:nowrap;
+}
+
+.navegacao ul li:hover a::before,
+.navegacao ul li.hovered a::before{
+    content:'';
+    position:absolute;
+    right:0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background:transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--branco);
+    pointer-events: none;
+}
+
+.navegacao ul li:hover a::after,
+.navegacao ul li.hovered a::after{
+    content:'';
+    position:absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background:transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--branco);
+    pointer-events:none;
+}
+
+
+/*---------------------------------------------------------------------------------------------MENU---------------------------------------------------------------------------------------------*/
+
+.main{
+    position:absolute;
+    width:calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background:var(--branco);
+    transition: 0.5s
+
+}
+
+.main.active{
+    width:calc(100% - 80px);
+     left:80px;
+}
+
+.topbar{
+    width:100%;
+    height: 60px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 10px;
+}
+
+.toggle{
+    position:relative;
+    width:60px;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:2.5rem;
+    cursor:pointer;
+}
+
+.pesquisa{
+    position:relative;
+    width:400px;
+    margin:0 10px;
+}
+
+.pesquisa label{
+    position:relative;
+    width: 100%;
+}
+
+.pesquisa label input{
+    width:100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    outline:none;
+    border: 1px solid var(--preto2);
+}
+
+.pesquisa label ion-icon{
+    position:absolute;
+    top:0;
+    left:10px;
+    font-size:1.2rem ;
+}
+
+.usuario{
+    position:relative;
+    min-width:40px;
+    height: 40px;
+    border-radius:50%;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.usuario img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.cardBox{
+    position:relative;
+    width:100%;
+    padding:20px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:30px;
+}
+
+.cardBox .card{
+    position:relative;
+    background:var(--branco);
+    padding:30px;
+    border-radius:20px;
+    display:flex;
+    justify-content: space-between;
+    cursor:pointer;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+}
+
+.cardBox .card .numeros{
+    position:relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color:var(--azul);
+    
+}
+
+.cardBox .card .cardNome{
+    color:var(--preto2);
+    font-size:1.1em;
+    margin-top:5px;
+}
+
+.cardBox .card .iconBx{
+    font-size: 3.5em;
+    color:var(--preto2);
+}
+
+.cardBox .card:hover{
+    background:var(--azul);
+}
+
+.cardBox .card:hover .numeros,
+.cardBox .card:hover .cardNome,
+.cardBox .card:hover .iconBx{
+    color:var(--branco);
+}
+
+.detalhes{
+    position:relative;
+    width:100%;
+    padding:20px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:30px;
+    /*margin-top:10px;*/
+}
+
+.detalhes .pedidoRecente{
+    position:relative;
+    display:grid;
+    min-height: 500px;
+    background:var(--branco);
+    padding:20px;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+}
+
+.cardHeader{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start
+;}
+
+.cardHeader h2{
+    font-weight: 600;
+    color:var(--azul);
+}
+
+
+.btn{
+    position:relative;
+    padding:5px 10px;
+    background:var(--azul);
+    text-decoration:none;
+    color:var(--branco);
+    border-radius:6px;
+}
+
+.detalhes table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+.detalhes table thead td{
+    font-weight: 600;
+}
+
+.detalhes .pedidoRecente table tr{
+    color: var(--preto1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.detalhes .pedidoRecente table tr:last-child{
+    border-bottom:none;
+}
+
+
+.detalhes .pedidoRecente table tbody tr:hover{
+    background:var(--azul);
+    color:var(--branco);
+}
+
+.detalhes .pedidoRecente table tr td{
+    padding:10px;
+}
+
+.detalhes .pedidoRecente table tr td:last-child{
+    text-align:end;
+}
+
+.detalhes .pedidoRecente table tr td:nth-child(2){
+    text-align:end;
+}
+
+.detalhes .pedidoRecente table tr td:nth-child(3){
+    text-align:center;
+}
+
+.status.entregue{
+    padding:2px 4px;
+    background:#6dcc00;
+    color:var(--branco);
+    border-radius:4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status.pendente{
+    padding:2px 4px;
+    background:#f0a524;
+    color:var(--branco);
+    border-radius:4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.retornado{
+    padding:2px 4px;
+    background:#f00;
+    color:var(--branco);
+    border-radius:4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.transito{
+    padding:2px 4px;
+    background:#4f9103;
+    color:var(--branco);
+    border-radius:4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.processo{
+    padding:2px 4px;
+    background:#1796ce;
+    color:var(--branco);
+    border-radius:4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.clientesRecentes{
+    position:relative;
+    display:grid;
+    min-height: 500px;
+    padding:20px;
+    box-shadow:0 7px 25px  rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+
+.clientesRecentes .imgBx{
+    position:relative;
+    width:40px;
+    height: 40px;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.clientesRecentes .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.clientesRecentes table tr td{
+    padding:12px 10px;
+}
+
+.clientesRecentes table tr td h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height:1.2rem;
+}
+
+.clientesRecentes table tr td h4 span{
+    font-size:14px;
+    color:var(--preto2);
+
+}
+
+.clientesRecentes table tr:hover{
+    background:var(--azul);
+    color:var(--branco)
+}
+
+.clientesRecentes table tr:hover td h4 span{
+    color:var(--branco)
+}
+
+/*---------------------------------------------------------------------------------------------RESPONSIVIDADE DA PAGE---------------------------------------------------------------------------------------------*/
+
+
+@media (max-width:991px){
+    .navegacao{
+        left:-300px;
+    }
+
+    .navegacao.active{
+        width: 300px ;
+        left:0;
+    }
+    .main{
+        width:100;
+        left:0;
+    }
+
+    .main.active{
+        left:300px;
+    }
+
+    .status{
+        white-space:nowrap;
+    }
+    .cardBox{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/*---------------------------------------------------------------------------------------------RESPONSIVIDADE TABLET---------------------------------------------------------------------------------------------*/
+@media (max-width:748px){
+    .detalhes{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .pedidoRecente{
+        margin-right:-212px;
+        overflow-x:auto;
+    }
+ 
+    .clientesRecentes{
+        margin-right:-212px;
+    }
+
+    .pedidoRecente.processo{
+        white-space: nowrap;
+    }
+    
+    .navegacao{
+        width:100%;
+        left:-100%;
+        z-index:1000;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------RESPONSIVIDADE CELULAR---------------------------------------------------------------------------------------------*/
+@media (max-width:480px){
+    .cardBox{
+        grid-template-columns:repeat(1,1fr);
+
+    }
+
+    .cardHeader h2{
+        font-size:20px;
+    }
+
+    .user{
+        min-width: 40px;
+    }
+   
+    .pedidoRecente{
+        margin-right:-300px;
+        overflow-x:auto;
+    }
+
+    .clientesRecentes{
+        margin-right:-300px;
+    }
+   
+    .navegacao{
+        width:100%;
+        left:-100%;
+        z-index:1000;
+
+    }
+    .navegacao.active{
+        width:100%;
+        left:0;
+    }
+
+    .toggle{
+        z-index:10001;
+    }
+
+    .main.active .toggle{
+        position:fixed;
+        right:0;
+        left:initial;
+        color:var(--branco)
+    }
+
+
+}
