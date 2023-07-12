@@ -263,6 +263,27 @@ body{
     color:var(--branco);
 }
 
+/*----------------------------------------------------------GRAFICOS----------------------------------------------------------*/
+.graficoBox{
+    position:relative;
+    width:100%;
+    height: auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:30px;
+    min-height: 200px;
+}
+
+.graficoBox .box{
+    position:relative;
+    background:#fff;
+    padding:20px;
+    width:100%;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+}
+/*----------------------------------------------------------PAINEL----------------------------------------------------------*/
 .detalhes{
     position:relative;
     width:100%;
@@ -443,6 +464,7 @@ body{
 
 
 @media (max-width:991px){
+    
     .navegacao{
         left:-300px;
     }
@@ -464,7 +486,12 @@ body{
         white-space:nowrap;
     }
     .cardBox{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(1,1fr); 
+    }
+    
+    .graficoBox{
+        grid-template-columns: 1fr;
+        height: auto;
     }
 }
 
@@ -491,6 +518,11 @@ body{
         width:100%;
         left:-100%;
         z-index:1000;
+    }
+
+    .graficoBox{
+        grid-template-columns: 1fr;
+        height: auto;
     }
 }
 
@@ -542,5 +574,8 @@ body{
         right:0;
     }
 
-
+    .graficoBox{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
 }

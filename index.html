@@ -61,13 +61,13 @@
             </ul>
         </div>
 
-        <!--Main-->
+        <!------------------------------------------------------------Main------------------------------------------------------------>
         <div class="main">
             <div class="topbar">
                 <div class="toggle"><ion-icon name="grid-outline"></ion-icon>
                 </div>
         
-        <!--Buscar-->
+        <!------------------------------------------------------------Buscar------------------------------------------------------------>
                 <div class="pesquisa">
                     <label>
                         <input type="text" placeholder="Buscar">
@@ -75,7 +75,7 @@
                         </input>
                     </label>
                 </div>
-                <!--Imagem do usuario-->
+                <!------------------------------------------------------------Imagem do usuario------------------------------------------------------------>
                 <div class="usuario">
                     <img src="img/user.jpg">
                 </div>
@@ -121,7 +121,21 @@
                 </div>
             </div>
 
-            <!--LISTA COM DETALHES-->
+            <!----------------------------------------------------------ADICIONAR GRAFICOS------------------------------------------------------------>
+
+            <div class="graficoBox">
+                
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <div class="box">
+                    <canvas id="lucro"></canvas>
+                </div>
+            </div>
+
+
+            <!------------------------------------------------------------LISTA COM DETALHES------------------------------------------------------------>
             <div class="detalhes">
                 <div class="pedidoRecente">
                     <div class="cardHeader">
@@ -228,7 +242,7 @@
                     </table>
                 </div>
 
-                <!--NOVOS CLIENTES-->
+                <!------------------------------------------------------------NOVOS CLIENTES------------------------------------------------------------>
                 <div class="clientesRecentes">
                     <div class="cardHeader">
                         <h2 class="clientesRecentes__titulo">Clientes Recentes</h2>
@@ -276,7 +290,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="js/script.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="js/my_charts.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
