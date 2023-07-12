@@ -1,8 +1,15 @@
 <h1>DashBoard de treinamento</h1>
 
+<h3>Menu da Dashboard aberto</h3>
 <div align="center" >
   <img src="https://user-images.githubusercontent.com/108825479/253039658-df9b2c9a-e8b5-4e77-b1cb-7b9321e91760.png" width="700px">
 </div>
+<br>
+<h3>Menu da Dashboard fechado</h3>
+<div align="center" >
+  <img src="https://user-images.githubusercontent.com/108825479/253039658-df9b2c9a-e8b5-4e77-b1cb-7b9321e91760.png" width="700px">
+</div>
+
 <h2>Aprendizado</h2
 <ul>
   <ol>Aplicação de Menu Hamburguer</ol>
