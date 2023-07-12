@@ -1,6 +1,6 @@
 let toggle = document.querySelector('.toggle');
-        let navegacao = document.querySelector('.navegacao');
-        let main = document.querySelector('.main');
+let navegacao = document.querySelector('.navegacao');
+let main = document.querySelector('.main');
 
 
         toggle.onclick = function(){
