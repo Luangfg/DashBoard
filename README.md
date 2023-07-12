@@ -28,7 +28,7 @@
 <br><br><br>
 <h3>Menu da Dashboard Atualização V.001-B</h3>
 <ul>
-<ul>Implementação</ul>
+<h3>Implementação</h3>
   <li>Implementação de graficos tipo Pizza e Torre</li>
   <li>Interação com o grafico via JS</li>
   <li>Atualização para dispositivos mobile</li>
