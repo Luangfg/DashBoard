@@ -1,4 +1,4 @@
-<h1>DashBoard de treinamento</h1> >
+<h1>DashBoard de treinamento</h1>
 <h2>Aprendizado</h2
 <ul>
   <ol>Aplicação de Menu Hamburguer</ol>
@@ -16,4 +16,4 @@
 
 
 
-<p>OBS:  OS DADOS E IMAGENS QUE CONSTAM NA DashBoard são informações victicias!</p>
+<p>OBS:  OS DADOS E IMAGENS QUE CONSTAM NA DashBoard são informações ficticias!</p>
