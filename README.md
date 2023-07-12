@@ -19,8 +19,8 @@
   <ol>Estilização avançada com CSS</ol>
 </ul>
 
-
-###Atualização V.001-A
+<br><br><br>
+<h3>Atualização V.001-A</h3>
 <ul>
 <li>Otimização para o Layout Responsivo, Erro de adaptação do menu foi corrigido via CSS, agora o menu está funcionando em 3 tamanhos maximos de telas sendo 480PX, 768px e tambem em 991px</li>
 </ul>
