@@ -526,7 +526,7 @@ body{
         
     }
     .navegacao.active{
-        width:53%;
+        width:calc(100% - 45%);
     }
 
     .toggle{
